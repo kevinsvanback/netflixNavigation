@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Import icons -->
+  <script src="https://kit.fontawesome.com/6e5270ffd8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Netflix Navigation</title>
+</head>
+
+<body>
+  <button class="nav-btn open-btn">
+    <!-- Font awesome icons -->
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- Local image -->
+  <img src="./img/netflix_logo.png" alt="Logo" class="logo">
+
+  <p class="text">Netflix Navigation</p>
+
+  <!-- Nested navigation with a close icon within -->
+  <div class="nav nav-black">
+    <div class="nav nav-red">
+      <div class="nav nav-white">
+        <button class="nav-btn close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <img src="./img/netflix_logo.png" alt="Logo" class="logo">
+
+        <!-- List of Netflix links -->
+        <ul class="list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Series</a></li>
+          <li><a href="#">Movies</a></li>
+          <li>
+            <ul>
+              <li><a href="#">Genres</a></li>
+              <li><a href="#">What's new</a></li>
+              <li><a href="#">Popular right now</a></li>
+              <li><a href="#">Only on netflix</a></li>
+            </ul>
+          </li>
+          <li><a href="#">My list</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
